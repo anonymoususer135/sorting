@@ -1,0 +1,64 @@
+Script started on 2024-03-20 04:34:33-07:00 [TERM="xterm-256color" TTY="/dev/pts
+/0" COLUMNS="137" LINES="53"]
+ubuntu@ubuntu-VirtualBox:~/Desktop/NewProject3$ ./megan_scheduling
+Prog3inputfileS24.txt
+Inputed Process Info: 
+A 8 0
+B 1 1
+C 2 3
+D 1 0
+E 5 1
+
+
+RR Scheduling
+
+0 A     Quantum expired – 5 ms remaining
+3 D     Process terminated
+4 B     Process terminated
+5 E     Quantum expired – 2 ms remaining
+8 A     Quantum expired – 2 ms remaining
+11 C     Process terminated
+13 A     Process terminated
+15 E     Process terminated
+17       Complete
+
+
+Process ID      Turnaround Time Wait Time
+A       15      7
+D       4       3
+B       4       3
+E       16      11
+C       10      8
+Average 49/5=9.832/5=6.4
+
+RR Completed
+
+
+Process SRTF Scheduling
+ Process ID     Turnaround Time Waiting Time 
+ A       17      9
+ D       1       0
+ B       1       0
+ E       8       3
+ C       2       0
+Average  29/5=5.8        12/5=2.4
+
+SRTF Completed
+
+
+
+Process FCFS Scheduling
+Processes ID    Turnaround Time Waiting Time
+A       8       0
+D       9       8
+B       10      9
+E       15      10
+C       17      15
+Average  59/5=11.8       42/5=8.4
+
+FCFS Completed
+
+ubuntu@ubuntu-VirtualBox:~/Desktop/NewProject3$ exit
+exit
+
+Script done on 2024-03-20 04:34:54-07:00 [COMMAND_EXIT_CODE="0"]
